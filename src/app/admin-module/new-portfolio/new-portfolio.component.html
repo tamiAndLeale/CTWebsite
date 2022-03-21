@@ -1,0 +1,49 @@
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<!------ Include the above in your HEAD tag ---------->
+
+<div class="wrapper fadeInDown">
+  <div id="formContent">
+    <!-- Tabs Titles -->
+
+    <!-- Icon -->
+    <div class="fadeIn first">
+      <img src="/assets/add-to-folder.png" id="icon" alt="User Icon" />
+      <h1>הוספת תיק</h1>
+    </div>
+
+   
+    <form [formGroup]="newPortfolioForm">
+        <div class="title">
+            תאריך פתיחת תיק &nbsp;  {{now| date:'dd-MM-yyyy'}}
+        </div>
+        <div class="example-container">
+            <mat-form-field appearance="fill">
+              <mat-label>סוג תיק</mat-label>
+              <mat-select formControlName="type" name="type" required>
+               
+                <mat-option *ngFor="let t of types" [value]="t.id" >
+                  {{t.name}}
+                </mat-option>
+              </mat-select>
+            </mat-form-field>
+           </div>
+      
+      <mat-form-field appearance="fill">
+        <mat-label>date of dedline</mat-label>
+        <input matInput [matDatepicker]="picker" formControlName="dedline">
+        <mat-datepicker-toggle matSuffix [for]="picker" ></mat-datepicker-toggle>
+        <mat-datepicker #picker></mat-datepicker>
+      </mat-form-field>
+      <input type="submit" class="fadeIn fourth" value="הוספה" (click) ="addPortfolio()">
+      <div id="formFooter" *ngIf="success" >
+        <a class="underlineHover" >נוסף בהצלחה!</a>
+      </div>
+    </form>
+
+   
+   
+
+  </div>
+</div>

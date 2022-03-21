@@ -1,0 +1,148 @@
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+<!------ Include the above in your HEAD tag ---------->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head> 
+    	<meta name="viewport" content="width=device-width, initial-scale=1">
+		 <!-- <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.css">  -->
+
+		<!-- Website CSS style -->
+		<!-- <link rel="stylesheet" type="text/css" href="assets/css/main.css"> -->
+
+		<!-- Website Font style -->
+	    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+		
+		<!-- Google Fonts -->
+		<link href='https://fonts.googleapis.com/css?family=Passion+One' rel='stylesheet' type='text/css'>
+		<link href='https://fonts.googleapis.com/css?family=Oxygen' rel='stylesheet' type='text/css'>
+
+		<title>Admin</title>
+	</head>
+	<body>
+		<div class="container">
+			
+			<div class="row main">
+				<div class="panel-heading">
+	               <div class="panel-title text-center">
+	               		<h1 class="title">עדכון פרטי לקוח</h1>
+	               		<hr />
+	               	</div>
+	            </div> 
+				<div class="main-login main-center">
+					<form  [formGroup]="updateDetailsForm" class="form-horizontal" method="post" action="#">
+
+                        <div>
+							<label for="identity" class="cols-sm-2 control-label">identity</label>
+							<div class="cols-sm-10">
+								<div class="input-group">
+									 <span class="input-group-addon"><i class="fa fa-id-card-o" aria-hidden="true"></i></span> 
+                                    <input type="text" class="form-control" name="identity" id="identity"  placeholder="Your Identity" formControlName="identity"/>
+								</div>
+							</div>
+						</div>
+
+						<div >
+							<label for="firstName" class="cols-sm-2 control-label">firstName</label>
+							<div class="cols-sm-10">
+								<div class="input-group">
+									 <span class="input-group-addon"><i class="fa fa-user fa" aria-hidden="true"></i></span> 
+                                    <input type="text" class="form-control" name="firstName" id="firstName"  placeholder="Your FirstName" formControlName="firstName"/>
+								</div>
+							</div>
+						</div>
+                        <div >
+							<label for="lastName" class="cols-sm-2 control-label">lastName</label>
+							<div class="cols-sm-10">
+								<div class="input-group">
+									 <span class="input-group-addon"><i class="fa fa-user fa" aria-hidden="true"></i></span> 
+                                    <input type="text" class="form-control" name="lastName" id="lastName"  placeholder="Your LastName" formControlName="lastName"/>
+								</div>
+							</div>
+						</div>
+                        <div >
+							<label for="phone" class="cols-sm-2 control-label">phone</label>
+							<div class="cols-sm-10">
+								<div class="input-group">
+                                   
+                                    <span class="input-group-addon"><i class="fa fa-phone-square" aria-hidden="true"></i></span>
+                                    <input type="text" class="form-control" name="phone" id="phone"  placeholder="Your Phone" formControlName="phone"/>
+								</div>
+							</div>
+						</div>
+
+						<div >
+							<label for="email" class="cols-sm-2 control-label">email</label>
+							<div class="cols-sm-10">
+								<div class="input-group">
+                                    <span class="input-group-addon"><i class="fa fa-envelope fa" aria-hidden="true"></i></span>
+									<input type="text" class="form-control" name="email" id="email"  placeholder="Your Email" formControlName="email"/>
+								</div>
+							</div>
+						</div>
+
+						<div >
+							<label for="country" class="cols-sm-2 control-label required">country</label>
+							<div class="cols-sm-10">
+								<div class="input-group">
+                                    <span class="input-group-addon"><i class="fa fa-globe fa-lg" aria-hidden="true"></i></span>
+									<input type="text" class="form-control" name="country" id="country"  placeholder="Your Country" formControlName="country"/>
+								</div>
+							</div>
+						</div>
+
+                        <div >
+							<label for="city" class="cols-sm-2 control-label required">city</label>
+							<div class="cols-sm-10">
+								<div class="input-group">
+                                    <span class="input-group-addon"><i class="fa fa-globe fa-lg" aria-hidden="true"></i></span>
+									<input type="text" class="form-control" name="city" id="city"  placeholder="Your City" formControlName="city"/>
+								</div>
+							</div>
+						</div>
+
+                        <div >
+							<label for="street" class="cols-sm-2 control-label required">street</label>
+							<div class="cols-sm-10">
+								<div class="input-group">
+                                    <span class="input-group-addon"><i class="fa fa-globe fa-lg" aria-hidden="true"></i></span>
+									<input type="text" class="form-control" name="street" id="street"  placeholder="Your Street"  formControlName="street"/>
+								</div>
+							</div>
+						</div>
+
+                        <div >
+							<label for="houseNumber" class="cols-sm-2 control-label required">houseNumber</label>
+							<div class="cols-sm-10">
+								<div class="input-group">
+                                    <span class="input-group-addon"><i class="fa fa-building" aria-hidden="true"></i></span>
+									<input type="text" class="form-control" name="houseNumber" id="houseNumber"  placeholder="Your HouseNumber" formControlName="houseNumber"/>
+								</div>
+							</div>
+						</div>
+
+                        <div >
+							<label for="apartmentNumber" class="cols-sm-2 control-label required">apartmentNumber</label>
+							<div class="cols-sm-10">
+								<div class="input-group">
+                                    <span class="input-group-addon"><i class="fa fa-home" aria-hidden="true"></i></span>
+									<input type="text" class="form-control" name="apartmentNumber" id="apartmentNumber"  placeholder="Your ApartmentNumber" formControlName="apartmentNumber"/>
+								</div>
+							</div>
+						</div>
+	
+
+						<div>
+							<button type="button" class="btn btn-primary btn-lg btn-block login-button" (click)="update()">Submit</button>
+						</div>
+					</form>
+				</div>
+			</div>
+			
+		</div>
+
+		<script type="text/javascript" src="assets/js/bootstrap.js"></script>
+	</body>
+</html>

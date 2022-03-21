@@ -1,0 +1,60 @@
+dt{
+    background-color: rgb(131, 129, 127);
+    text-align: center;
+  
+}
+.routing{
+    width: 48%; 
+     height: 49%;
+     background-color: #e7e7e7;
+     opacity: 0.85; 
+     position: fixed;
+     top: 30%;
+     right: 26%;  
+}
+#Div{
+
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 5%;
+    opacity: 1;
+   
+   }
+   .mat-row .mat-cell {
+     border-bottom: 1px solid transparent;
+     border-top: 1px solid transparent;
+     cursor: pointer;
+   }
+   
+   .mat-row:hover .mat-cell {
+     border-color: currentColor;
+   }
+   
+   .demo-row-is-clicked {
+     font-weight: bold;
+   }
+   .demo-table {
+     width: 100%;
+   }
+   
+   .title{
+     margin-left: 42%;
+     margin-right: 25%;
+     font-family:Georgia, 'Times New Roman', Times, serif;
+     font-weight: 900;
+     font-size: xx-large;
+     opacity: 1; 
+   
+    
+   }
+   .image-upload > input
+{
+    display: none;
+}
+
+.image-upload img
+{
+    width: 20%;
+    cursor: pointer;
+}
+   

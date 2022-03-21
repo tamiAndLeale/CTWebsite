@@ -1,0 +1,145 @@
+
+.home{
+    /* position: absolute;
+  width: 50%;
+ height: 50%;
+  z-index: 15;
+  top: 50%;
+  left: 50%;
+  margin: -100px 0 0 -150px; */
+  border: solid;
+border-color: rgb(134, 133, 133);
+    border-radius: 20px;
+    /* margin-top:20% ; */
+    margin-left: 25%;
+    margin-right: 25%;
+    height: 60%;
+    background-color: rgb(255, 255, 255);
+}
+
+.routing{
+    width: 48%; 
+     height: 49%;
+     background-color: #e7e7e7;
+     opacity: 0.85; 
+     position: fixed;
+     top: 30%;
+     right: 26%; 
+     overflow: auto; 
+}
+.list{
+    direction: rtl;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: larger;
+   margin-right: 5%;
+
+}
+.logo{
+    direction: rtl;
+}
+
+.Nav{
+    width: 50%; 
+    border: solid;
+    border-color: rgb(134, 133, 133);
+    border-radius: 20px;
+     /* margin-top:20% ;  */
+     margin-left: 25%;
+     margin-right: 25%;
+     height: 60%;
+     background-color: #e7e7e7;
+     opacity: 0.85; 
+     position: fixed;
+     top: 20%;
+   
+    
+}
+.bb{
+    margin-right: 30%;
+    /* font-family: inherit; */
+}
+h2{
+    /* font-family: inherit; */
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 800;
+   color: black;
+}
+li{
+    position: fixed;
+    top: 5%;
+  
+}
+ul{
+  margin-right: 10%;
+
+}
+button{
+    position: fixed;
+    height: 5%;
+}
+
+.title{
+    margin-left: 42%;
+    margin-right: 25%;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-weight: 900;
+    font-size: xx-large;
+    opacity: 1; 
+ 
+   
+}
+body {
+    background-image:url('/assets/try.png');
+    background-position:center;
+     background-size:cover; 
+    margin-top: 0px;
+    -webkit-font-smoothing: antialiased;
+    font: normal 14px Roboto,arial,sans-serif;
+    font-family: 'Dancing Script', cursive!important;
+  }
+
+
+
+.btn1:not([disabled]):hover {
+  background-color: rgba(107, 103, 91, 0.96);
+  color: white;
+}
+.margin{
+    margin-top:20px;    
+    margin-bottom:20px;
+}
+
+ .themeBtn {
+    background: rgb(230, 199, 27);
+    color: #ffffff !important;
+    display: inline-block;
+    font-size: 20px;
+    font-weight:500;
+    height: 50px;
+    line-height: 0.7;
+    padding: 18px 30px;
+    text-transform: capitalize;
+    border-radius: 1px;
+    /* letter-spacing: 0.5px; */
+	border:0px !important;
+	cursor:pointer;
+	border-radius:100px;
+    margin-right: 40%;
+    position: fixed;
+    top:21%;
+    width: 180px;
+    left: 64%
+    
+
+ } 
+a:hover{
+    color: #ffffff;
+    text-decoration:none;
+} 
+.themeBtn:hover {
+    background:  rgba(107, 103, 91, 0.96);
+    color: #ffffff;
+    box-shadow: 0 10px 25px -2px rgba(107, 103, 91, 0.96);
+}
+
+

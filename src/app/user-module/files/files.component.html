@@ -1,0 +1,113 @@
+
+<!-- <dl *ngFor="let f of files">
+   <dt > <mat-card style=" border-color: rgb(131, 129, 127); border-width: 10%;background-color: rgb(162, 170, 177);">{{f.name}}</mat-card></dt>
+    
+</dl>
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> -->
+<!------ Include the above in your HEAD tag ---------->
+<!-- <div class="routing">
+<div class="container">
+	<form id="fileUploadForm" 
+      action="/"
+      enctype="multipart/form-data">
+    <fieldset>
+        <div class="form-horizontal">
+            <div class="form-group">
+                <div class="row">
+                <label class="control-label col-md-2 text-right" for="filename"><span>File</span></label>
+                <div class="col-md-10">
+                    <div class="input-group">
+                        <input type="hidden" id="filename" name="filename" value="">
+                        <input type="file" id="uploadedFile" name="uploadedFile" class="form-control form-control-sm" accept=".csv, application/vnd.openxmlformats-officedocument.spreadsheetml.sheet, application/vnd.ms-excel">
+                        <div class="input-group-btn">
+                            <input type="submit" value="Upload" class="rounded-0 btn btn-primary">
+                        </div>
+                    </div>
+                </div>
+                </div>
+            </div>                        
+        </div>
+    </fieldset>    
+</form>
+</div>
+</div> -->
+<body  style="overflow: auto;">
+<div id="Div">
+    <div class="title"> מסמכים אישיים </div>
+  <table mat-table [dataSource]="files" class="mat-elevation-z8 demo-table">
+  
+    <!-- Weight Column -->
+    <ng-container matColumnDef="show" >
+      <th mat-header-cell *matHeaderCellDef>show</th>
+      <td mat-cell *matCellDef="let element"><button>show</button></td>
+    </ng-container>
+  
+    <!-- Symbol Column -->
+     
+       <ng-container matColumnDef="upload" >
+      <th mat-header-cell *matHeaderCellDef>upload</th>
+      <td mat-cell *matCellDef="let element">
+    <!-- <div class="input-group" style="width: 50%;">
+        <input type="hidden" id="filename" name="filename" value="">
+        <input type="file" id="uploadedFile" name="uploadedFile" class="form-control form-control-sm" accept=".csv, application/vnd.openxmlformats-officedocument.spreadsheetml.sheet, application/vnd.ms-excel"> -->
+
+
+        <!-- <div class="image-upload" class="form-control form-control-sm" accept=".csv, application/vnd.openxmlformats-officedocument.spreadsheetml.sheet, application/vnd.ms-excel">
+          <label for="file-input">
+              <img src="/assets/attach-file.png"/>
+          </label>
+      
+          <input id="file-input" type="file"/>
+      </div> -->
+
+
+
+        <!-- <div class="input-group-btn">
+            <input type="submit" value="Upload" class="rounded-0 btn btn-primary">
+        </div>
+    </div></td> -->
+
+    <div class="text-center">
+      <input class="form-control" type="file" 
+              (change)="onChange($event)"
+              >
+    
+      <button (click)="onUpload()" 
+          class="btn btn-success">
+          Upload
+      </button>
+  </div>
+    
+  <!-- Shareable short link of  uoloaded file
+  <div class="container text-center jumbotron"
+      *ngIf="shortLink">
+      <h2> Visit Here</h2>
+      <a href="{{shortLink}}">{{shortLink}}</a>
+  </div>
+    
+ 
+  <div class="container" *ngIf="loading">
+      <h3>Loading ...</h3>
+  </div> -->
+ 
+    </ng-container>
+
+    <ng-container matColumnDef="date">
+        <th mat-header-cell *matHeaderCellDef>date</th>
+        <td mat-cell *matCellDef="let element">{{element.date| date:'yyyy-MM-dd'}}</td>
+      </ng-container>
+    <ng-container matColumnDef="name">
+      <th mat-header-cell *matHeaderCellDef>name</th>
+      <td mat-cell *matCellDef="let element">{{element.name}}</td>
+    </ng-container>
+    
+  
+    <tr mat-header-row *matHeaderRowDef="columnsToDisplay"></tr>
+     <tr
+    mat-row *matRowDef="let row; columns: columnsToDisplay;" ></tr> 
+  </table> 
+  </div>
+</body>
+  
