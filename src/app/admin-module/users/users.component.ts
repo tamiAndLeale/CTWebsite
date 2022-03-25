@@ -22,6 +22,7 @@ import { NewUserComponent } from '../new-user/new-user.component';
   styleUrls: ['./users.component.css'],
   providers: [MessageService]
 })
+//trynig gitHub!!!!
 export class UsersComponent implements OnInit,AfterViewInit {
 
 users!:User[]
@@ -97,7 +98,7 @@ users!:User[]
   }
   deleteUser(id:number){
     // this.userService.deleteUser(id);
-    alert("למחוק לקוח זה לצמיתות?").
+    alert("למחוק לקוח זה לצמיתות?")
   }
 }
 
